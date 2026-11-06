@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.jfif">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LEGO World - Filmes e jogos</title>
+</head>
+<body>
+    <header class="cabecalho text-center">
+        <img src="img/lego-logo.png" alt="Logo LEGO" class="logo">
+        <h1>Filmes e jogos</h1>
+        <p>Filmes, séries e jogos baseados nos blocos LEGO.</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="colecoes.html">Coleções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personagens.html">Personagens</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="filmes.html">Filmes e jogos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.lego.com" target="_blank" rel="noopener">LEGO.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2>Vídeo</h2>
+            <video controls preload="metadata" class="w-100 rounded" poster="img/sede-lego.jfif">
+                <source src="video/lego-video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </section>
+
+        <section class="mb-5">
+            <h2>Trilha sonora</h2>
+            <audio controls class="w-100">
+                <source src="audio/madrugada-de-plastico.mp3" type="audio/mp3">
+                Seu navegador não suporta áudio.
+            </audio>
+        </section>
+
+        <section>
+            <h2 class="mb-4">Para assistir e jogar</h2>
+            <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/filme-lego.jpg" class="card-img-top" alt="Filmes de LEGO">
+                    <div class="card-body">
+                        <h3 class="card-title">Filmes</h3>
+                        <p class="card-text">Aventuras no cinema com personagens feitos de blocos.</p>
+                        <a href="lancamentos.html" class="btn btn-primary">Ver lançamentos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/serie-lego.webp" class="card-img-top" alt="Séries de LEGO">
+                    <div class="card-body">
+                        <h3 class="card-title">Séries</h3>
+                        <p class="card-text">Histórias em episódios com o humor característico da marca.</p>
+                        <a href="lancamentos.html" class="btn btn-primary">Ver lançamentos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/jogo-lego.jpeg" class="card-img-top" alt="Jogos de LEGO">
+                    <div class="card-body">
+                        <h3 class="card-title">Jogos</h3>
+                        <p class="card-text">Games para montar, explorar e completar missões.</p>
+                        <a href="lancamentos.html" class="btn btn-primary">Ver lançamentos</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape text-center">
+        <p>LEGO World - Projeto acadêmico sem vínculo oficial com a LEGO.</p>
+        <button id="botao-tema">Alternar tema</button>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

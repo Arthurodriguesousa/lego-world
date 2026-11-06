@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.jfif">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LEGO World - Contato</title>
+</head>
+<body>
+    <header class="cabecalho text-center">
+        <img src="img/lego-logo.png" alt="Logo LEGO" class="logo">
+        <h1>Contato</h1>
+        <p>Fale com a gente.</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="colecoes.html">Coleções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personagens.html">Personagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes e jogos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.lego.com" target="_blank" rel="noopener">LEGO.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <h2>Envie sua mensagem</h2>
+                <div id="alerta"></div>
+                <form id="form-contato">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required minlength="3" placeholder="Seu nome completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="voce@exemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" required pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Use o formato (41) 99999-9999" placeholder="(41) 99999-9999">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select class="form-select" id="assunto" name="assunto" required>
+                            <option value="">Selecione...</option>
+                            <option value="Dúvida">Dúvida</option>
+                            <option value="Sugestão">Sugestão</option>
+                            <option value="Elogio">Elogio</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required minlength="10" placeholder="Escreva pelo menos 10 caracteres"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <h2>Mensagens enviadas</h2>
+                <ul id="lista-mensagens" class="list-group mb-3"></ul>
+                <button type="button" id="limpar-mensagens" class="btn btn-outline-danger">Limpar mensagens</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape text-center">
+        <p>LEGO World - Projeto acadêmico sem vínculo oficial com a LEGO.</p>
+        <button id="botao-tema">Alternar tema</button>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

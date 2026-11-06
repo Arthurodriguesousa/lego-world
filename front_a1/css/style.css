@@ -1,0 +1,548 @@
+/*
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #252525;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    background-color: #ffd500;
+    color: #252525;
+    text-align: center;
+    padding: 25px;
+}
+
+.cabecalho h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cabecalho p {
+    font-size: 18px;
+}
+
+.logo {
+    width: 100px;
+    height: 75px;
+}
+
+.menu {
+    background-color: #0055bf;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu a:hover {
+    background-color: #e3000b;
+    border-radius: 5px;
+}
+
+.principal {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.principal h2 {
+    color: #0055bf;
+    margin-bottom: 20px;
+}
+
+.destaque {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.destaque img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cartao a {
+    display: inline-block;
+    background-color: #e3000b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cartao a:hover {
+    background-color: #0055bf;
+}
+
+.imagem-destaque {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.linha-tempo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.linha-tempo article {
+    flex: 1;
+    min-width: 200px;
+    background-color: #ffd500;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rodape {
+    background-color: #252525;
+    color: white;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.rodape button {
+    background-color: #ffd500;
+    color: #252525;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.favoritar {
+    background-color: #ffd500;
+    border-color: #ffd500;
+    color: #252525;
+}
+
+body.dark {
+    background-color: #252525;
+    color: white;
+}
+
+body.dark .principal h2 {
+    color: #ffd500;
+}
+
+body.dark .destaque,
+body.dark .cartao,
+body.dark .card {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+body.dark .linha-tempo article {
+    background-color: #0055bf;
+    color: white;
+}
+
+body.dark .table {
+    color: white;
+}
+
+.navbar {
+    background-color: #0055bf !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffd500 !important;
+}
+
+.navbar .navbar-toggler {
+    border-color: white;
+}
+
+.navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+.menuAtivo {
+    background-color: #e3000b;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+}
+
+.form-control:hover,
+.form-select:hover {
+    border-color: #0055bf;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ffd500;
+    box-shadow: 0 0 0 0.25rem rgba(255, 213, 0, 0.5);
+}
+
+.form-control:invalid:not(:placeholder-shown) {
+    border-color: #e3000b;
+    background-color: #ffe5e7;
+}
+
+#botao-tema:hover {
+    background-color: #e3000b;
+    color: white;
+    cursor: pointer;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+body.dark .form-control:invalid:not(:placeholder-shown) {
+    background-color: #5a2b2e;
+}
+
+body.dark .list-group-item {
+    background-color: #3b3b3b;
+    color: white;
+}
+*/
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #252525;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    background-color: #ffd500;
+    color: #252525;
+    text-align: center;
+    padding: 25px;
+}
+
+.cabecalho h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cabecalho p {
+    font-size: 18px;
+}
+
+.logo {
+    width: 100px;
+    height: 75px;
+}
+
+.menu {
+    background-color: #0055bf;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8px max(12px, calc((100% - 1320px) / 2 + 12px));
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.menu a:hover,
+.menu a.menuAtivo {
+    color: #ffd500;
+}
+
+.principal {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.principal h2 {
+    color: #0055bf;
+    margin-bottom: 20px;
+}
+
+.destaque {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.destaque img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cartao a {
+    display: inline-block;
+    background-color: #e3000b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cartao a:hover {
+    background-color: #0055bf;
+}
+
+.imagem-destaque {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.linha-tempo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.linha-tempo article {
+    flex: 1;
+    min-width: 200px;
+    background-color: #ffd500;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rodape {
+    background-color: #252525;
+    color: white;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.rodape button {
+    background-color: #ffd500;
+    color: #252525;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.favoritar {
+    background-color: #ffd500;
+    border-color: #ffd500;
+    color: #252525;
+}
+
+body.dark {
+    background-color: #252525;
+    color: white;
+}
+
+body.dark .principal h2 {
+    color: #ffd500;
+}
+
+body.dark .destaque,
+body.dark .cartao,
+body.dark .card {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+body.dark .linha-tempo article {
+    background-color: #0055bf;
+    color: white;
+}
+
+body.dark .table {
+    color: white;
+}
+
+.navbar {
+    background-color: #0055bf !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffd500 !important;
+}
+
+.navbar .navbar-toggler {
+    border-color: white;
+}
+
+.navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 992px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+}
+
+.form-control:hover,
+.form-select:hover {
+    border-color: #0055bf;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ffd500;
+    box-shadow: 0 0 0 0.25rem rgba(255, 213, 0, 0.5);
+}
+
+.form-control:invalid:not(:placeholder-shown) {
+    border-color: #e3000b;
+    background-color: #ffe5e7;
+}
+
+#botao-tema:hover {
+    background-color: #e3000b;
+    color: white;
+    cursor: pointer;
+}
+
+body.dark .form-control,
+body.dark .form-select {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+body.dark .form-control:invalid:not(:placeholder-shown) {
+    background-color: #5a2b2e;
+}
+
+body.dark .list-group-item {
+    background-color: #3b3b3b;
+    color: white;
+}
